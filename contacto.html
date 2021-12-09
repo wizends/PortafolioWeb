@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contacto</title>
+    <!-- font awesome cdn   -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <!--  css  link  -->
+    <link rel="stylesheet" href="./contacto.css">    
+</head>
+<body>
+    <header>
+
+        <a href="./index.html#home" class="logo"><i class="fas fa-utensils"></i>SigloXXI</a>
+    
+        <div id="menu-bar" class="fas fa-bars"></div>
+    
+        <nav class="navbar">
+            <a href="./index.html">Inicio</a>
+            <a href="./index.html#speciality">Especialidades</a>
+            <a href="./index.html#popular">Platos populares</a>
+            <a href="./index.html#gallery">Galería</a>
+            <a href="./index.html#order">Reserva</a>
+            <a href="./contacto.html">Contacto</a>
+            <a href="./index.html#ubicacion">Ubicación</a>
+        </nav>
+    
+    </header>
+
+<!-- order section starts  -->
+
+<section class="order" id="order">
+
+    <h1 class="heading">Contacto</h1>
+
+    <div class="row">
+        
+        <div class="image">
+            <img src="./images/Contactanos-shatter.png" alt="">
+        </div>
+
+        <form name='formulario-js' onsubmit='return validar()'>
+
+            <div class="inputBox">
+                <input type="text" id="nombre" placeholder="Nombre cliente" required >
+                <input type="email" id="email" placeholder="Email" required >
+            </div>
+
+            <div class="inputBox">
+                <input type="tel" id="telefono" placeholder="Celular" pattern="\x2b[0-9]+" required >
+                <input type="text" id="motivo" placeholder="motivo" >
+            </div>
+
+            <textarea placeholder="Mensaje" name="mensaje" id="mensaje" cols="30" rows="10"required></textarea>
+
+            <input type="submit" value="Enviar" class="btn">
+
+        </form>
+
+    </div>
+
+</section>
+
+<!-- order section ends -->
+
+<!-- Sección footer  -->
+
+<section class="footer">
+    <h1 class="credit"> creado por grupo 3  | Todos los derechos reservados </h1>
+</section>
+
+    <!-- llama al js  -->
+<script src="./script.js"></script>
+<script src="./validar.js">  </script>
+</body>
+</html>
